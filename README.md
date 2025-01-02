@@ -35,7 +35,7 @@ full_url = "https://task10-asw9.onrender.com/resipe"
 
 * URL: /resipe
 * Method: POST
-* Bosy:
+* Body:
 ```js
 {
   "name": "Recipe Name",
