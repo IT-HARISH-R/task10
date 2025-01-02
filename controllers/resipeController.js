@@ -17,7 +17,7 @@ const recipesControler = {
 
             await newRecipe.save();
 
-            response.json({ message: "create Recipe" })
+            response.json({ message: "create Recipe Successful " })
         }
         catch (error) {
             response.json({ message: error })
@@ -53,7 +53,7 @@ const recipesControler = {
                 price
             }
             const newRecipe = await Recipe.findByIdAndUpdate(id, updatewRecipe)
-            response.json({ message: "update Recipe" })
+            response.json({ message: "update Recipe Successful " })
 
         }
         catch (error) {
@@ -64,7 +64,7 @@ const recipesControler = {
         try{
             const {id} = request.params;
             await Recipe.findByIdAndDelete(id); 
-            response.json({message: "delete Recipe"})
+            response.json({message: "Delete Recipe Successful "})
         }
         catch(error){
             response.json(error)
